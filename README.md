@@ -17,10 +17,9 @@ If you are an entrepreneur register your store in No-Wait. We can offer more com
 
 ## Tecnology
 
-Javascript,
-BootStrap 4,
-Google Maps API,
-API,
+Javascript, BootStrap 4, HBS, Google Maps API,
+Authenticated session, API, Hash, NodeEmail,
+FlatPickr, Express, MongoDB, ACL - (Access Control List),
 Html5 and CSS
 
 ## Contributing
