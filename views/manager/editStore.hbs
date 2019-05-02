@@ -1,0 +1,43 @@
+<div class="container">
+<div class="row h-100 align-self-center">
+    <div class="col-md-4"></div>
+      <div class="col-md-4"> 
+        <h5>Edit Store</h5>
+          <form action="/manager/painel/edited" method="post">
+            <div class="form-group">
+              <input type="hidden" value="{{editStore._id}}" name="idEditStore">
+            </div>
+            <div class="form-group">
+              <label for="">Name:</label>
+              <input class="ml-3" value="{{editStore.name}}" type="text" name="nameEdit" required>
+            </div>  
+            <div class="form-group">
+              <label for="">Address:</label>
+              <input value="{{editStore.address}}" type="text" name="addressEdit" required>
+            </div>  
+            <div class="form-group"> 
+              <label for="">Number:</label>
+              <input class="ml-1" value="{{editStore.number}}" type="text" name="numberEdit" required>
+            </div>
+            <div class="form-group">   
+              <label for="">District:</label>
+              <input class="ml-3" value="{{editStore.district}}" type="text" name="districtEdit" required>
+            </div>
+            <div class="form-group">   
+              <label for="">City:</label>
+              <input class="ml-4" value="{{editStore.city}}" type="text" name="cityEdit" required>
+            </div>
+            <div class="form-group">   
+              <label for="">State:</label>
+              <input class="ml-4" value="{{editStore.state}}" type="text" name="stateEdit" required>
+            </div>
+            <div class="form-group">   
+              <label for="">Code:</label>
+              <input class="ml-4" value="{{editStore.zipCode}}" type="text" name="zipCodeEdit" required> 
+            </div>
+            <button class="btn btn-primary" type="submit">Edit Register</button>
+          </form>
+      </div>
+    <div class="col-md-4"></div>    
+</div>
+</div>

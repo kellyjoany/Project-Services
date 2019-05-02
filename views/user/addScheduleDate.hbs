@@ -1,0 +1,50 @@
+<div class="container">
+<div class="row h-100 align-self-center">
+    <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <h5>New schedule</h5>
+          <form onsubmit="return validateMyFormSchedule();" action="/user/painel" method="post">
+            <div class="form-group">
+              <label for="">Address:</label>  
+              <select id="stId" name="idStore" class="material_select">
+                    <option value="" disabled selected>Choose the address</option>
+                     {{#each address }} 
+                    <option value="{{this._id}}">{{this.address}}</option>
+                    {{/each}}
+              </select>
+            </div>
+            <div class="form-group"> 
+              <label for="">Date:</label>
+              <input id="date" type="text" name="date" class="flatpickr" >
+            </div>
+            <div class="form-group">  
+              <label for="">Choose the Hour:</label>
+              <select id="stHr" name="hour">
+                   <option value="" disabled selected>Choose the hour</option> 
+              </select> 
+            </div>
+              <button class="btn btn-primary" type="submit">Schedule</button>
+          </form>    
+      </div>
+    <div class="col-md-4"></div>    
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+ <script>
+/*  function validateMyFormSchedule(){
+    alert("Schedule Done! Please Check your Email :)");
+    return true;
+  }*/
+
+  flatpickr('.flatpickr',{
+    minDate: new Date(),
+    dateFormat: 'd/m/Y'
+  }) 
+
+ </script>
+ <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+ <script src="/javascripts/script.js"></script>

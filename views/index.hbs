@@ -1,0 +1,56 @@
+<div class="container">
+<div class="row h-100 align-self-center">
+    <div class="col-md-4"></div>
+      <div class="col-md-4 my-auto"> 
+          <h5 class="">Schedules done</h5>
+            <form action="/schedule" method="post">
+              <div class="form-group">
+                  <select name="idManag" id="Manag" class="material_select">
+                      <option value="" disabled selected>Choose the store</option>
+                      {{#each st }} 
+                      <option value="{{this._id}}">{{this.nameStore}}</option>
+                      {{/each}}
+                  </select>
+              <button class="mt-1 btn btn-primary" type="submit">Next</button>
+            </form>
+            <form action="/">
+              <button class="mt-2 btn btn-primary" type="submit">New Search</button>
+            </form>
+        </div>
+      <div class="col-md-4"></div>    
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-2"></div>
+        <div class="col-md-8">
+        {{#if sch.schedules }} 
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th>Day</th>
+              <th>Hour</th>
+            </tr>
+          </thead>  
+            {{#each sch.schedules }}  
+            <tr>
+              <td>{{this.bookingDay}}</td>
+              <td>{{this.bookingHour}}</td>
+            </tr>
+            {{/each}}
+          </table>
+        {{/if}} 
+        </div>
+      <div class="col-md-2"></div>    
+  </div>
+</div>
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
+
+
+        
+
+    

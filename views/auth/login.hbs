@@ -1,0 +1,25 @@
+<div class="container">
+<div class="row h-100 align-self-center">
+    <div class="col s4"></div>
+      <div class="col s4 my-auto"> 
+        <form action="/auth/login" method="POST" id="form">
+          <h2>Login</h2>
+          <div class="form-group">
+            <label class="mr-2" for="username">Login</label>
+            <input type="text" name="username" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" required>
+          </div>
+
+          <button class="btn btn-primary">Enter</button>
+
+          <p class="account-message mt-2">
+            Still don't have an account? <a href="/auth/signup">Register</a>
+          </p>
+        </form>
+      </div>
+    <div class="col s4"></div>    
+</div>
+</div>

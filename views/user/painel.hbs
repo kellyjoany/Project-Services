@@ -1,0 +1,38 @@
+<div class="container">
+<div class="row h-100 align-self-center">
+    <div class="col-md-2"></div>
+      <div class="col-md-8 my-auto">
+        <h5>Welcome, friend!</h5>
+        <form action="/user/agendar">
+          <button class="mb-1 btn btn-primary" type="submit">New Schedule</button>
+        </form>
+        <form action="/logout">
+          <button id="sp" class="mb-1 btn btn-primary" type="submit">Logout</button>
+        </form>
+        
+        {{#if stores }} 
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th>Store</th>
+              <th>Day</th>
+              <th>Hour</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>  
+          {{#each stores }}  
+          <tr>
+            <td>{{this.stores.name}}</td>
+            <td>{{this.bookingDay}}</td>
+            <td>{{this.bookingHour}}</td>
+            <td><a href="/user/agendardata/edit/{{this._id}}" class="green-text text-darken-2">Edit</a></td>
+            <td><a href="/user/painel/{{this._id}}" class="green-text text-darken-2">Delete</a></td>
+          </tr>
+          {{/each}}
+        </table>
+       {{/if}}   
+      </div>
+    <div class="col-md-2"></div>    
+</div>
+</div>
