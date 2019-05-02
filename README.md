@@ -5,7 +5,7 @@ and Mario Tadakuma.
 
 ## Access No-Wait
 
-You can access the project here [No-Wait](https://kellyjoany.github.io/StarDust/).
+You can access the project here [No-Wait](https://no-wait.herokuapp.com/).
 
 ## History
 
