@@ -17,11 +17,11 @@ If you are an entrepreneur register your store in No-Wait. We can offer more com
 
 ## Tecnology
 
-Javascript
+Javascript,
 BootStrap 4,
 Google Maps API,
 API,
-Html5 and CSS,
+Html5 and CSS
 
 ## Contributing
 Pull requests are welcome. For major changes, let me know.
